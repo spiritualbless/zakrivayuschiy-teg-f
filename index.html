@@ -72,7 +72,7 @@
               </p>
               <p>Вперед, навстречу приключениям!</p>
             </div>
-            <footer class="card__footer">
+            <div class="card__footer">
               <button
               type="button"
               class="card__icon-button" 
@@ -113,7 +113,7 @@
         >
           <span class="button__text">Like</span>
         </button>
-      </footer>
+      </div>
     </article>
   </li>
   <li class="cards-list__item">
@@ -144,7 +144,7 @@
           взять новый и попытаться заново
         </p>
       </div>
-      <footer class="card__footer">
+      <div class="card__footer">
         <button
           type="button"
           class="card__icon-button"
@@ -185,7 +185,7 @@
         >
           <span class="button__text">Like</span>
         </button>
-      </footer>
+      </div>
     </article>
   </li>
   <li class="cards-list__item">
@@ -209,7 +209,7 @@
         </p>
         <p>Любой успех способен вдохновить чтобы двигаться дальше c;</p>
       </div>
-      <footer class="card__footer">
+      <div class="card__footer">
         <button
           type="button"
           class="card__icon-button"
@@ -250,7 +250,7 @@
         >
           <span class="button__text">Like</span>
         </button>
-      </footer>
+      </div>
     </article>
   </li>
   <li class="cards-list__item">
@@ -279,7 +279,7 @@
           ничего никуда не улетело и хотя бы работает как нужно
         </p>
       </div>
-      <footer class="card__footer">
+      <div class="card__footer">
         <button
           type="button"
           class="card__icon-button"
@@ -320,7 +320,7 @@
         >
           <span class="button__text">Like</span>
         </button>
-      </footer>
+      </div>
     </article>
   </li>
   <li class="cards-list__item">
@@ -350,7 +350,7 @@
           семьи
         </p>
       </div>
-      <footer class="card__footer">
+      <div class="card__footer">
         <button
           type="button"
           class="card__icon-button"
@@ -391,7 +391,7 @@
         >
           <span class="button__text">Like</span>
         </button>
-      </footer>
+      </div>
     </article>
   </li>
   <li class="cards-list__item">
@@ -418,7 +418,7 @@
           прийти совсем внезапно после короткого отдыха 🤔
         </p>
       </div>
-      <footer class="card__footer">
+      <div class="card__footer">
         <button
           type="button"
           class="card__icon-button"
@@ -459,7 +459,7 @@
         >
           <span class="button__text">Like</span>
         </button>
-      </footer>
+      </div>
     </article>
   </li>
   <li class="cards-list__item">
@@ -490,7 +490,7 @@
           чем я был вчера
         </p>
       </div>
-      <footer class="card__footer">
+      <div class="card__footer">
         <button
           type="button"
           class="card__icon-button"
@@ -531,7 +531,7 @@
         >
           <span class="button__text">Like</span>
         </button>
-      </footer>
+      </div>
     </article>
   </li>
   <li class="cards-list__item">
@@ -561,7 +561,7 @@
           хорошенько отдохнуть 😎
         </p>
       </div>
-      <footer class="card__footer">
+      <div class="card__footer">
         <button
           type="button"
           class="card__icon-button"
@@ -602,7 +602,7 @@
         >
           <span class="button__text">Like</span>
         </button>
-      </footer>
+      </div>
     </article>
   </li>
 </ul>
@@ -610,22 +610,22 @@
   type="button"
   onclick="window.modal.showModal();"
   aria-controls="modal"
-  class="button button--save"
+  class="button button__save"
 >
-  <svg class="button__icon" viewBox="0 0 29 28">
-    <use href="./svg/floppy.svg" />
+  <svg class="button__icon" viewBox="0 0 39 39">
+    <use href="./svg/floppy.svg#floppy" />
   </svg>
   <span class="button__text">Сохранить на память</span>
 </button>
 </main>
 <dialog class="modal" id="modal">
 <div class="modal__content">
-  <svg class="modal__icon" viewBox="0 0 29 28">
-    <use href="./svg/floppy.svg" />
+  <svg class="modal__icon" viewBox="0 0 39 39">
+    <use href="./svg/floppy.svg#floppy" />
   </svg>
   <p>Вставьте дискету,чтобы продолжить</p>
 </div>
-<form method="dialog">
+<form class="dialog__form" method="dialog">
   <button type="submit" class="button modal__button">
     <span class="button__text">ок</span>
   </button>

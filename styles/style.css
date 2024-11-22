@@ -96,21 +96,18 @@
 .modal__content {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
 }
 
 .modal__icon {
   flex-shrink: 0;
   inline-size: 39px;
   block-size: 39px;
+  mix-blend-mode: difference;
 }
 
 .modal__button {
   inline-size: 100%;
-}
-
-.modal__icon {
-  mix-blend-mode: difference;
 }
 
 /* #konec Конец блока modal */
@@ -178,7 +175,7 @@
   opacity: 0.6;
 }
 
-.theme-menu__button:focus {
+.theme-menu__button:focus-visible {
   outline: none;
   opacity: 0.6;
 }
@@ -206,7 +203,7 @@
 .main {
   display: grid;
   justify-items: center;
-  gap: 57px;
+  gap: 50px;
   padding-block-end: 105px;
 }
 
@@ -214,7 +211,7 @@
 
 .cards-list {
   display: grid;
-  gap: 52px;
+  gap: 50px;
 }
 
 .card {
@@ -281,7 +278,7 @@
   display: flex;
   justify-content: end;
   align-items: stretch;
-  gap: 5px;
+  gap: 12px;
   padding: 25px 25px 23px 25px;
 }
 
@@ -345,7 +342,7 @@
   transform: scaleX(1);
 }
 
-.button--save {
+.button__save {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -361,8 +358,8 @@
 }
 
 .button__icon {
-  block-size: 22px;
-  inline-size: 22px;
+  block-size: 21px;
+  inline-size: 21px;
 }
 
 /* #konec Конец блока button */
