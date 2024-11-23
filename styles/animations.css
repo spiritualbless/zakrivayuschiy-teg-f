@@ -13,7 +13,7 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
-@keyframes heart {
+@keyframes HeartEnlargingAfterLike {
     from {
       transform: scale(1);
     }
@@ -22,7 +22,7 @@
     }
   }
   
-  @keyframes sparks {
+  @keyframes SparksAppearingAfterLike {
     from {
       opacity: 0;
     }
@@ -31,7 +31,7 @@
     }
   }
   
-  @keyframes arrow {
+  @keyframes MovingArrowThemeChoice {
     from {
       transform: translate(0);
     }
@@ -99,9 +99,9 @@
   }
   
   .like-icon.is-liked .heart {
-    animation: heart 0.3s ease-in 0.1s 1 alternate;
+    animation: HeartEnlargingAfterLike 0.3s ease-in 0.1s 1 alternate;
   }
   
   .like-icon.is-liked .sparks {
-    animation: sparks 0.3s ease-in 0.3s 1 alternate;
+    animation: SparksAppearingAfterLike 0.3s ease-in 0.3s 1 alternate;
   }

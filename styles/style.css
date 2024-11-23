@@ -88,6 +88,7 @@
 .modal:not([open]) {
   opacity: 0;
   pointer-events: none;
+  display: none;
 }
 
 .modal::backdrop {
@@ -200,7 +201,7 @@
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  animation: arrow 0.5s ease-in-out infinite alternate;
+  animation: MovingArrowThemeChoice 0.5s ease-in-out infinite alternate;
   inset-inline-start: -20px;
   inset-block-start: 0px;
 }
