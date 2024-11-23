@@ -80,12 +80,14 @@
   text-transform: uppercase;
   background: var(--page-background-color, #ffffff);
   max-inline-size: 355px;
-}
-
-.modal[open] {
   display: grid;
   grid-template-rows: repeat(2, min-content);
   gap: 30px;
+}
+
+.modal:not([open]) {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal::backdrop {
@@ -108,6 +110,7 @@
 
 .modal__button {
   inline-size: 100%;
+  padding: 10px 36px;
 }
 
 /* #konec Конец блока modal */
@@ -175,8 +178,12 @@
   opacity: 0.6;
 }
 
-.theme-menu__button:focus-visible {
+.theme-menu__button:focus {
   outline: none;
+  
+}
+
+.theme-menu__button:focus-visible {
   opacity: 0.6;
 }
 
@@ -278,18 +285,33 @@
   display: flex;
   justify-content: end;
   align-items: stretch;
-  gap: 12px;
+  gap: 5px;
   padding: 25px 25px 23px 25px;
 }
 
 .card__icon-button {
-  display: grid;
-  border: 2px solid transparent;
-  padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 2px;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
   background: transparent;
   transition: border-color 0.3s ease;
   cursor: pointer;
   appearance: none;
+  inline-size: 43px;
+}
+
+.card__like-button {
+  padding: 10px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 90%;
+  background-color: transparent;
+  cursor: pointer;
+  inline-size: 130px;
 }
 
 .card__icon-button:focus {
@@ -305,16 +327,13 @@
 
 .button {
   position: relative;
-  z-index: 1;
   border: 2px solid var(--text-color, #000000);
-  padding: 10px 36px;
   font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
   font-size: 14px;
   text-transform: inherit;
   background: var(--page-background-color, #ffffff);
   transition: box-shadow 0.3s ease;
-  cursor: pointer;
-  appearance: none;
+  transition-timing-function: ease;
 }
 
 .button:focus {
@@ -329,7 +348,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  z-index: -1;
+  z-index: 1;
   background: var(--text-color, #000000);
   transition: transform 0.5s ease-in-out;
   transform: scaleX(0);
@@ -362,6 +381,17 @@
   inline-size: 21px;
 }
 
+.button__text {
+  position: relative;
+  z-index: 2;
+  display: block;
+  font-family: var(--page-accent-font-family), sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 90%;
+  mix-blend-mode: difference;
+}
+
 /* #konec Конец блока button */
 
 .like-icon {
@@ -375,7 +405,7 @@
     max-inline-size: 340px;
   }
 
-  .button--save {
+  .button__save {
     flex-direction: column;
   }
 
