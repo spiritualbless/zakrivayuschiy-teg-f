@@ -107,6 +107,8 @@
   inline-size: 39px;
   block-size: 39px;
   mix-blend-mode: difference;
+  z-index: 1;
+  color: var(--button-text-color);
 }
 
 .modal__button {
